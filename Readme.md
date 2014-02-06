@@ -1,7 +1,7 @@
 Measure Text
 ============
 
-Currently only measures width. jQuery is required as jqLite elements don't have size methods.
+jQuery is required as jqLite elements don't have size methods.
 
 Usage
 -----
@@ -13,6 +13,7 @@ Usage
         return {
           link: function(scope, elem, attrs) {
             var textWidth = measureTextWidth(elem);
+            // do something with this new found knowledge...
           }
         };
       }]);
