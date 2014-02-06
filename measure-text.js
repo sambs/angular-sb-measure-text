@@ -1,6 +1,6 @@
 angular.module('measureText', [])
 
-  .factory('textToHtml', function () {
+  .filter('textToHtml', function () {
 
     function repeat (string, number) {
       for (var i = 0, r = ''; i < number; i++) {
@@ -25,7 +25,7 @@ angular.module('measureText', [])
     };
   })
 
-  .factory('measureTextWidth', ['textToHtml', function (textToHtml) {
+  .factory('measureTextWidth', ['textToHtmlFilter', function (textToHtml) {
     var cache = {};
 
     return function (element) {
@@ -54,7 +54,7 @@ angular.module('measureText', [])
     };
   }])
 
-  .factory('measureTextHeight', ['textToHtml', function (textToHtml) {
+  .factory('measureTextHeight', ['textToHtmlFilter', function (textToHtml) {
     var cache = {};
 
     return function (element) {
