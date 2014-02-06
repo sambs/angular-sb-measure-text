@@ -1,7 +1,7 @@
 Measure Text
 ============
 
-Currently only measures width. 
+Currently only measures width. jQuery is required as jqLite elements don't have size methods.
 
 Usage
 -----
@@ -11,8 +11,8 @@ Usage
       .directive('tagInput', ['measureTextWidth', function (measureTextWidth) {
 
         return {
-          link: function($scope, $element, attrs) {
-            var textWidth = measureTextWidth($element);
+          link: function(scope, elem, attrs) {
+            var textWidth = measureTextWidth(elem);
           }
         };
       }]);
