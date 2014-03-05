@@ -1,14 +1,16 @@
-Measure Text
-============
+sbMeasureText
+=============
+
+Provides two services, `sbMeasureTextWidth` and `sbMeasureTextHeight` and a filter `textToHtml`.
 
 jQuery is required as jqLite elements don't have size methods.
 
 Usage
 -----
 
-    angular.module('tagInput', ['measureText'])
+    angular.module('myModule', ['sbMeasureText'])
 
-      .directive('tagInput', ['measureTextWidth', function (measureTextWidth) {
+      .directive('myDirective', ['sbMeasureTextWidth', function (measureTextWidth) {
 
         return {
           link: function(scope, elem, attrs) {
@@ -17,3 +19,13 @@ Usage
           }
         };
       }]);
+
+ToDo
+----
+
+Tests - what do we compare the result to?
+
+License
+-------
+
+Licensed under the MIT License

@@ -1,4 +1,4 @@
-angular.module('measureText', [])
+angular.module('sbMeasureText', [])
 
   .filter('textToHtml', function () {
 
@@ -25,7 +25,7 @@ angular.module('measureText', [])
     };
   })
 
-  .factory('measureTextWidth', ['textToHtmlFilter', function (textToHtml) {
+  .factory('sbMeasureTextWidth', ['textToHtmlFilter', function (textToHtml) {
     var cache = {};
 
     return function (element) {
@@ -54,7 +54,7 @@ angular.module('measureText', [])
     };
   }])
 
-  .factory('measureTextHeight', ['textToHtmlFilter', function (textToHtml) {
+  .factory('sbMeasureTextHeight', ['textToHtmlFilter', function (textToHtml) {
     var cache = {};
 
     return function (element) {

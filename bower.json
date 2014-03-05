@@ -1,5 +1,5 @@
 {
-  "name": "angular-measure-text",
+  "name": "angular-sb-measure-text",
   "version": "0.2.0",
   "dependencies": {
     "jquery": "~1.9.1",
