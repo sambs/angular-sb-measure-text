@@ -1,3 +1,5 @@
+/* jshint browser: true, es3: true */
+
 angular.module('sbMeasureText', [])
 
   .filter('textToHtml', function () {
